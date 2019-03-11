@@ -1,0 +1,3 @@
+[jupyter_serverproxy_servers]
+c9 = jupyter_c9_proxy:setup_c9
+

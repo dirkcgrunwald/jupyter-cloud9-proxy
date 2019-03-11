@@ -1,6 +1,6 @@
 Metadata-Version: 1.1
-Name: jupyter-cloud9-proxy
-Version: 1.0
+Name: jupyter-c9-proxy
+Version: 1.0b1
 Summary: grunwald@colorado.edu
 Home-page: https://github.com/jupyterhub/jupyter-server-proxy/tree/master/contrib/cloud9
 Author: Dirk Grunwald based on Project Jupyter Contributors

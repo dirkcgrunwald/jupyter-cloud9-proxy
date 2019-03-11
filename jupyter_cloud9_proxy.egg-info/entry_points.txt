@@ -1,3 +1,0 @@
-[jupyter_serverproxy_servers]
-cloud9 = jupyter_cloud9_proxy:setup_cloud9
-

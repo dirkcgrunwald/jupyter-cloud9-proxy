@@ -1,8 +1,8 @@
 import setuptools
 
 setuptools.setup(
-    name="jupyter-cloud9-proxy",
-    version='1.0',
+    name="jupyter-c9-proxy",
+    version='1.0b1',
     url="https://github.com/dirkcgrunwald/jupyter-cloud9-proxy.git",
     author="Dirk Grunwald based on Project Jupyter Contributors",
     description="grunwald@colorado.edu",
@@ -14,10 +14,10 @@ setuptools.setup(
     ],
     entry_points={
         'jupyter_serverproxy_servers': [
-            'cloud9 = jupyter_cloud9_proxy:setup_cloud9',
+            'c9 = jupyter_c9_proxy:setup_c9',
         ]
     },
     package_data={
-        'jupyter_cloud9_proxy': ['icons/*'],
+        'jupyter_c9_proxy': ['icons/*'],
     },
 )

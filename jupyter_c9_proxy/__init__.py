@@ -7,7 +7,7 @@ for more information.
 import os
 import shutil
 
-def setup_cloud9():
+def setup_c9():
     # Make sure cloud9 is in $PATH
     def _cloud9_command(port):
         full_path = shutil.which('node')
@@ -25,7 +25,7 @@ def setup_cloud9():
             'USE_LOCAL_GIT': 'true'
         },
         'launcher_entry': {
-            'title': 'Cloud9 IDE',
-            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'cloud9.svg')
+            'title': 'C9 IDE',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icons', 'c9.svg')
         }
     }
