@@ -10,11 +10,13 @@ import shutil
 def setup_cloud9():
     # Make sure cloud9 is in $PATH
     def _cloud9_command(port):
-        full_path = shutil.which('cloud9')
+        full_path = shutil.which('node')
         if not full_path:
-            raise FileNotFoundError('Can not find cloud9 executable in $PATH')
+            raise FileNotFoundError('Can not find node executable in $PATH')
         path = os.getenv("C9SDK") or "/opt/c9sdk"
         bin = path + "/server.js"
+        if not os.path.isfile(bin):
+            raise FileNotFoundError('Can not find cloud9 server.js')
         return ['node', bin, '--listen=127.0.0.1', '--port=' + str(port), "-a", ":", "--packed"]
 
     return {
